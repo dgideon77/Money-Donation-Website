@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://cdn.glitch.global/2a48b532-b665-49c6-b258-bf6fe631c788/bb1.jpg?v=1695909659870"); 
+            background-size: cover;
+        }
+        h1{
+            color: #3498db;
+            align-items: center;
+        }
+        
+        .container {
+            margin:100px;
+            max-width: 900px;
+            padding:0px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            text-align: left;
+            display: flex;  
+            margin-left: 275px;
+            margin-top: 40px;
+        }
+        .input :hover{
+            background-color: aqua;
+        }
+        .container .donation-form h1 {
+            color: #3498db;
+            padding-left: 200px;
+        }
+        h3 {
+            color: red;
+        }
+        .donation-form {
+            padding: 20px;
+            flex: 1;
+        }
+        .input-container {
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .donate-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-left: 300px;
+        }
+        .donate-button:hover {
+            background-color: #2980b9;
+        }
+        .donation-image-container {
+            flex: 1;
+            text-align: center;
+            margin-top: 130px;
+            margin-left: 20px;
+        }
+        .donation-image {
+            max-width: 90%;
+            max-height: 800px;
+        }
+        .footer h1{
+            color: #3498db;
+            align-items: center;
+        }
+        .footer p{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+      <h1>WHY WE DONATE?</h1>
+    <p style="color:azure">
+        
+Donating money to people admitted in hospitals is often an act of compassion and solidarity with those facing medical challenges.<br>
+Providing financial assistance to those in hospitals reflects the humanitarian values of empathy and kindness. It demonstrates a commitment to helping others in their time of need,compassion within society!<br>Your donation makes a difference!” “Please donate if you can: Every contribution helps!” “Join us in making a positive impact: Donate today!” “Be a part of the change: Give generously!”
+        <br><br>
+        <br>
+     </p>
+      <h3>  PLEASE DONATE !!</h3>
+    <div class="container">
+        <div class="donation-form">
+            <h1>DONATE NOW</h1>
+            <div class="input-container">
+                <form action="/payment" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="number">Mobile No:</label>
+                    <input type="text" id="number" name="number" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name= "email" required><br>
+
+                    <label for="amount">Donation Amount:</label>
+                    <input type="number" id="amount" name="amount" required><br>
+                   <button  type="submit" class="donate-button">Pay Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="donation-image-container">
+            <img class="donation-image" src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/s93-pm-2757-kr0a207w.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fb7b77fba5ace0f4206c1e620c5ea715" alt="Donate Image">
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Terms & Conditions</h1>
+       <p> You agree to share information entered on this page with owner of the page adhering to applicable laws.</p>
+   </div>
+</body>
+</html>

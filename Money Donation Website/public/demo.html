@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="section1" id="section1">
+            <h1>PROFILE</h1>
+            <h3> <span class="bold-text">Name :</span> Ravi</h3><br>
+            <h3> <span class="bold-text">Age : </span>25Years</h3><br>
+            <h3> <span class="bold-text">Village Name : </span>Vishnupur</h3><br>
+            <h3> <span class="bold-text">Annual income : </span>50,000/-</h3><br>
+            <h3><span class="bold-text">Hospital Name :</span> Varma Hospital Bhimavaram</h3><br>
+            <h3><span class="bold-text">Blood Group :</span> B+</h3> <br>
+            <h3><span class="bold-text">Required Units : </span> 5 units</h3><br>
+           
+            <h3><span class="bold-text">Reports: </span><a href="#" class="blink">Check Down Here</a></h3> <br>
+            <div class="reports">
+                <h3> <a href="#" id="image1"  onclick="loadImage('https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/R.jpg?v=1697723334447')">1.Blood Report</a></h3><br>
+                <h3><a href="#" onclick="loadImage('https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/OIP.jpg?v=1697723349994')">2.CT scanning</a></h3><br>
+                <h3><a href="#"  onclick="loadImage('https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/OIP%20(3).jpg?v=1697723357672')">3.X-RAY Report</a></h3><br>
+                <h3><a href="#"  onclick="loadImage('https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/OIP%20(2).jpg?v=1697723362289')">4.MRI Report</a></h3><br>
+                <h3><a href="#" onclick="loadImage('https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/op5.jpg?v=1697723339445')">5.ECG Report</a></h3><br>
+                <h3><a href="#"  onclick="loadImage('image4.jpg')"></a></h3><br>
+            </div>
+             <h2><a href="donation.html">DONATE</a></h2><br>
+        </div>
+        <div class="section2" id="section2"></div>
+    </div>
+    <script>
+        function loadImage(imageUrl) {
+        var section2 = document.getElementById('section2');
+        section2.innerHTML = `<img src="${imageUrl}" alt="Image">`;
+      }
+
+    </script>
+</body>
+</html>

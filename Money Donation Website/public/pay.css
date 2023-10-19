@@ -1,0 +1,63 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/pexels-vishnu-r-nair-1105666.jpg?v=1697690863051"); 
+     background-size: cover;
+}
+.payment-container {
+    margin: 400px;
+    margin-top:90px;
+    margin-bottom: 150px;
+    max-width: 400px;
+    padding:100px;
+    border: 1px solid #222;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    margin-left: 410px;
+    
+}
+.payment-container h1{
+    background-color: #fff;
+    color: #fff;
+}
+.payment-container .qr-code-scanner .blink{
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+
+}
+#payment-form {
+    text-align: left;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}

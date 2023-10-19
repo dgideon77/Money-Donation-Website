@@ -1,0 +1,482 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*****************************  nevigation bar ****************************/
+.nevbar{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    background-color: transparent;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.logo a h1{
+    margin: 15px 100px;
+}
+.logo a h1 span{
+    color: aqua;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+    margin-top: 28px;
+    margin-right: 100px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: aqua;
+}
+.menu ul li a span{
+    color: #c3073f;
+}
+.menuicon{
+    margin: auto;
+    color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.menuicon i span {
+    font-weight: 600;
+}
+
+
+/**************  background cover image  ***************/
+.cover {
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/pexels-vishnu-r-nair-1105666.jpg?v=1697690863051"); 
+     background-size: cover;
+    z-index: -200; 
+    color: white;
+}
+.cover .information .countdown {
+    text-align: center;
+    padding-left: 820px;
+    font-size: 21px;
+}
+.progress-container {
+    width: 25%;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: 200px;
+    right: 120px;
+}
+.progress-bar {
+    height: 30px;
+    background-color: hsla(60, 89%, 48%, 0.897);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    width: 2%; /* Adjust the width based on the current amount relative to the target */
+}
+.target-amount {
+    position: absolute;
+    top: 250px; /* Adjust the top position as needed */
+    right: 160px;
+    text-align: right;
+    font-weight: bold;
+}
+.target-amount1 {
+    position: absolute;
+    top: 285px; /* Adjust the top position as needed */
+    right: 248px;
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+.target-amount1 a{
+    color: red;
+}
+.cover .information {
+    align-items: center;
+    max-width: 1000px ;    
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.information h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.information h3 span {
+    float: right;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8); 
+}
+.information h2 {
+    font-size: 40px;
+}
+.information h1 span{
+    font-size: 110px;
+    line-height: 120px;
+    color: aqua;
+    letter-spacing: 10px;   
+}
+.information a {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.information a button{
+    padding: 8px 80px;
+    cursor: pointer;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, transparent 50%, aqua 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: .3s;
+    border: 2px solid white;
+    color: white;
+    margin: 40px 0 -50%;
+    width: 100%;
+}
+.information a button:hover {
+    background-position: right;
+    color: white;
+}
+
+
+/* *******************************   About us  **************************************** */
+.about{
+    width: 100%;
+    display: flex;
+    background-color:#fff;
+    padding-top: 80px;
+    font-family: Arial, sans-serif;
+}
+
+/* About image */
+.about .imgcontanner{
+    width: 50%;
+    position: relative; 
+}
+.about .imgcontanner .aboutimg {
+    background: url('https://cdn.glitch.global/21b88d15-2977-45c5-8c07-755ec08bab9b/pexels-alexandra-haddad-9317179.jpg?v=1697665778477');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    top: 10px;
+    left: 10%;
+    border-radius: 30px;
+    border-color: #f44336; 
+}
+
+/* about content */
+.about .aboutcontent {
+    width: 50%;
+    padding: 5px 8% 200px 3%;
+    padding-bottom: 50px;
+    border: 2px solid hsl(0, 75%, 39%); 
+    border-image-width: 10px;
+    border-radius: 50px;
+    padding: 20px; 
+    width: 750px;
+}
+.bold-text {
+    font-weight: bold;
+}
+ 
+.aboutcontent h1 {
+    font-weight: 430;
+    font-size: 40px;
+    padding-bottom: 25px;
+    padding-left: 200px;
+   color: aqua;
+    top: -50px;
+}
+.aboutcontent h3{
+    font-weight: 50;
+    font-size: 18px;
+    color: black;
+    margin-bottom: -5px;
+    font-family: Arial, sans-serif;
+}
+
+.aboutcontent h3 a{
+  color: #f44336;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.aboutcontent .blink{
+    animation: blinker 2.0s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.aboutcontent h5{
+    font-weight: 50;
+    font-size: 14px;
+    padding-top: 15px;
+    font-family: Arial, sans-serif;
+}
+.aboutcontent h5 a{
+    color: #f44336;
+    font-weight: bold;
+}
+.aboutcontent h2 a{
+   
+    color: linear-gradient(#2d557d,#9610fd);
+    text-decoration: none;
+    background-color: transparent;
+    padding: 6px 40px;
+    background: linear-gradient(to right, transparent 50%, aqua 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: .3s;
+    border: 2px solid black;
+    letter-spacing: 2px;
+    font-size: 14px;  
+}
+
+
+/* donate button  */
+
+.aboutcontent a:hover {
+    background-position: right;
+}
+
+/* ************************************  Service  ************************** */
+.service{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #F8F9FA;
+    text-align: center;
+    box-sizing: border-box;
+}
+.service h5{
+    color: rgb(1, 99, 1);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.service h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+/* details service */
+.service .details {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.details .info {
+    padding: 0 15px;
+}
+.details .info .logo {
+    padding: 34px;
+    width:45px;
+    margin: 0 auto;
+    background-color: aqua;
+    border-radius: 500px;
+    color: white;
+    font-size: 30px;
+}
+.details .info #head {
+    padding: 20px 0 10px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* ***************************************  Counter ************************** */
+.contercontent {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color:aliceblue;
+}
+.counterbox {
+    width: 100%;
+    height: 250px;
+}
+.contercontent .one {
+   background-image: linear-gradient(#2d557d,#9610fd);
+}
+.counterbox .information {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.information .number p {
+    font-size: 50px;
+    color:aqua;
+    padding-right: 10px;
+}
+.information .text p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+/************************************** Contact **********************************************/
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 125px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('https://source.unsplash.com/1600x900/?contact,message');
+}
+.contact h1 {
+    color: white;
+    text-align: center;
+}
+.contactcontanner {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.contactcontanner .contanner {
+    width: 30%;
+}
+.contactcontanner .contanner .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+}
+.heading .icon {
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    color: aqua;
+}
+.heading .info {
+    width: 70%;
+    margin: 25px auto;
+    color: white;
+}
+.heading .info #contactinfo {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* message form */
+.messageform {
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.messageform .form {
+    width: 80%;
+    margin: 50px auto;
+}
+.messageform input , .messageform #inputbox {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+}
+.messageform button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    background: linear-gradient(to right , transparent 50% , aqua 50%);
+    background-size: 200%;
+    background-position: left;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+.messageform button:hover {
+    background-position: right;
+}
+
+
+/****************************** FOOTER **************************/
+
+
+.footer{
+    padding: 100px 20px 15px;
+    background-image: linear-gradient(#2d557d,#9610fd);
+    color: #fff;
+
+}
+.footer-logo{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer h4{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.footer h4 p{
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 35px;
+    color: #c3073f;
+}
+.footer h4 a h6{
+    padding-left: 50px;
+     color: red;
+}
+.footer a{
+    color: #f44336;
+}
+.footer .row .fa{
+    padding-right: 20px;
+    font-size: 15px;
+}
+.footer hr{
+    margin-top: 10px;
+    background: #efefef;
+}
+.fa-heart{
+    margin: 0 5px;
+    color: #f44336;
+}
+.footer .copyright{
+    text-align: center;
+}
+.header button:hover{
+ background: red;
+}
